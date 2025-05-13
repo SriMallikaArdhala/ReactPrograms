@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>Simple Calculator</title>
+<style>
+.calci{
+width:300px;
+height:300px;
+border:2px ;
+padding:30px;
+margin:20px auto;
+}
+ .calci input{
+outline:none;
+width:205px;
+height:40px;
+font-size:15px;
+vertical-align:middle;
+background-color:#B8B8B8;
+}
+.keys{
+display: grid;
+grid-template-columns: repeat(4,50px);
+}
+button{
+outline:none;
+width:55px;
+height:40px;
+font-size:15px;
+vertical-align:middle;
+}
+</style>
+</head>
+<body>
+ <div class="calci">
+   <input type="text" id="display" ><br>
+<div class="keys">
+ <button >(</button>
+ <button>CE</button>
+ <button>)</button>
+<button>C</button>
+<button>1</button>
+<button>2</button>
+<button>3</button>
+<button>+</button>
+<button>4</button>
+<button>5</button>
+<button>6</button>
+<button>-</button>
+<button>7</button>
+ <button>8</button>
+<button>9</button>
+<button>*</button>
+<button >.</button>
+<button >0</button>
+<button>=</button>
+<button>/</button>
+</div>
+</div>
+<script>
+let screen = document.getElementById('display');
+buttons = document.querySelectorAll('button');
+let screenValue = ' ';
+for (item of buttons) {
+    item.addEventListener('click', (e) => {
+        buttonText = e.target.innerText;
+        console.log('Button text is ', buttonText);
+   
+        if (buttonText == 'C') {
+            screenValue = " ";
+            screen.value = screenValue;
+        }
+ else if (buttonText == 'CE') {
+            screenValue = 0;
+            screen.value = screenValue;
+        }
+        else if (buttonText == '=') {
+            screen.value = eval(screenValue);
+        }
+        else {
+            screenValue += buttonText;
+            screen.value = screenValue;
+        }
+
+    })
+}
+
+
+
+</script>
+         </body>
+</html>

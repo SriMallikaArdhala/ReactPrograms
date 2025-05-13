@@ -1,0 +1,64 @@
+
+<html> 
+      <head>
+         <title>student information</title>
+     </head>
+<body> 
+
+     <h3>GRADE CARD</H3>
+    <img src="C:\Users\ardha\OneDrive\Pictures\Saved Pictures\srimallika.png"  alt="Sri Mallika" align-left: 45%>
+    <p><b> Hall TicketNo :</b>22BQ1A1209</BR>
+    <b>Name:</b>Ardhala Sri Mallika</br>
+    <b>Father Name:</b>Anjaneyulu</br>
+<b>Aadhar Number:</b>314684898732</br>
+   <b>Branch: INFORMATION TECHNOLOGY</b></P>
+<table style='align:center'>
+<tr>
+<th>SI.no</th>
+<th>course title</th>
+<th>grade </th>
+<th>status</th>
+<th>credits </th></tr>
+<tr>
+<td>1.</td>
+<td>mathematics-111</td>
+<td>A</td>
+<td>P</td>
+<td>3</td>
+</tr>
+<tr>
+<td>2.</td>
+<td>MFCS</td>
+<td>B</td>
+<td>P</td>
+<td>3</td>
+</tr>
+<tr>
+<td>3.</td>
+<td>Data Structures</td>
+<td>C</td>
+<td>P</td>
+<td>3</td>
+</tr>
+<tr>
+<td>4.</td>
+<td>Java Programming</td>
+<td>B</td>
+<td>P</td>
+<td>3</td>
+</tr>
+<tr>
+<td>5.</td>
+<td>Software Engineering</td>
+<td>B</td>
+<td>P</td>
+<td>3</td>
+</tr>
+<tr>
+<td colspan="4">Total</td>
+<td >15</td>
+<tr>
+  </table>
+
+</body>
+</html>

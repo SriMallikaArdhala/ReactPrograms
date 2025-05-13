@@ -1,0 +1,40 @@
+.box {
+    width :400px;
+    height:300px;
+border:2px solid #333;
+padding:20px;
+margin: 30px auto;
+}
+
+.box h1{
+font-size: 24px;
+margin-bottom: 10px;
+}
+ 
+.box p:first-of-type {
+font-size: 16px;
+margin-bottom: 10px;
+padding : 10px;
+background-color: #fofofo;
+} 
+
+.box img {
+width: 100%;
+margin :10px 0;
+}
+			
+.box-sizing-demo {
+width: 200px;
+padding: 20px;
+border: 5px solid #000;
+margin: 20px auto ;
+background-color: #ccc;
+}
+
+.box-sizing-demo {
+    box-sizing: content-box;
+}
+
+.box-sizing-demo {
+    box-sizing: border-box; 
+}

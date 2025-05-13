@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Canvas Example</title>
+</head>
+<body>
+<img src="C:\Users\ardha\OneDrive\Pictures\server.jpeg" id="i" />
+
+<button onclick="draw()">Click me</button>
+<Canvas width=300 height=300 style="border:1Px solid" id="c" />
+<script> 
+var can=document.getElementById('c');
+var ctx=can.getContext("2d");
+
+ctx.fillText("Drawing an image",10,10);
+ctx.fillStyle="red";
+ctx.fillRect(20,20,90,70);
+function draw()
+{
+var img=document.getElementById('i');
+ctx.drawImage(img,100,100);
+}
+</script>
+</body>
+</html>

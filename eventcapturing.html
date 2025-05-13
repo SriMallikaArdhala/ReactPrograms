@@ -1,0 +1,32 @@
+<html>
+<head><title>event capturing</title>
+</head>
+<body>
+      <div id="gp" style=" border:2px solid red;
+            width: 300px;
+            height: 300px;
+            margin:0px auto;">
+      <h2 style="vertical-align:center;text-align:center;">grand parent</h2>
+      <div id="p" style="      border:2px solid green;
+            width: 200px;
+            height: 200px;
+            margin:0px auto;">
+      <h2 style="vertical-align:center;text-align:center;">parent</h2>
+      <div id="c" style="  border:2px solid blue;
+            width: 100px;
+            height: 100px;
+            margin:0px auto; ">
+      <h2 style="vertical-align:center;text-align:center;">child</h2>
+    </div>
+</div>
+</div>
+<script>
+let gp=document.getElementById("gp");
+let p=document.getElementById("p");
+let c=document.getElementById("c");
+gp.addEventListener("click",(e)=>{alert("you have clicked on grandparent")},{capture:true});
+p.addEventListener("click",(e)=>{alert("you have clicked on parent") },{capture:true});
+c.addEventListener("click",(e)=>{alert("you have clicked on child") },{capture:true});
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WorkerThreadExample</title>
+</head>
+<body>
+    <button onclick="startWorker()">Start Worker</button>
+    <button onclick="stopWorker()">Stop Worker</button>
+    <p>Counter is incremented to: <output id="result"></output></p>
+    <script>
+        var w;
+
+        function startWorker() {
+            if (typeof(Worker) !== "undefined") {
+                if (typeof(w) !== "defined") {
+                    w = new Worker("webworker.js");
+                    w.onmessage = function(event) {
+                        document.getElementById("result").innerHTML = event.data;
+                    }
+                } else {
+                    console.log("Worker is already working");
+                }
+            } else {
+                console.log("Web Workers are not supported by your browser");
+            }
+        }
+
+        function stopWorker() {
+            
+                w.terminate();
+                w = "undefined";
+            
+        }
+    </script>
+</body>
+</html>

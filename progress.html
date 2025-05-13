@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Progress Example</title>
+</head>
+<body>
+    <p>This example shows how the progress element works:</p>
+    <button onclick="updateProgress()">Update Progress</button>
+    <progress id="progress" value="50" max="100"></progress>
+    <p id="paratext">Task is in progress.....50% completed</p>
+
+    <script>
+        function updateProgress() {
+            var progress = document.getElementById("progress");
+            var paratext = document.getElementById("paratext");
+
+            if (progress.value < progress.max) {
+                progress.value = progress.value + 10;
+                var per = (progress.value / progress.max) * 100;
+                paratext.textContent = "Task is in progress...." + Math.round(per) + "% completed";
+            } else {
+                paratext.textContent = "Task completed";
+            }
+        }
+    </script>
+</body>
+</html>

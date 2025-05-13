@@ -1,0 +1,23 @@
+.container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+.section-title {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.text {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+}
+
+h1, h2 {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+.highlight {
+    background-color: #ffeb3b;
+}

@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Web storage demo</title>
+</head>
+<body>
+<button onclick="setData()">set</button>
+<button onclick="getData()">get</button>
+<p id="p"/>
+<script>
+function setData(){
+if(typeof(Storage)!=="undefined"){
+localStorage.setItem("username","mallika");
+localStorage.setItem("password","Mallika@23");
+}else{
+document.getElementById("p").innerHTML="your browser nor supporting the webstorage";
+}
+}
+function getData(){
+if(localStorage.username && localStorage.password){
+document.getElementById("p").innerHTML="username="+localStorage.getItem("username")+"<br>password="+localStorage.getItem("password");
+}
+}
+</script>
+</body>
+</html>

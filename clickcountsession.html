@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Click Count Demo</title>
+</head>
+<body>
+    <button onclick="count()">Click Me</button>
+    <p id="p"/>
+    <script>
+        function count() {
+            if (typeof(Storage) !== "undefined") {
+                if (sessionStorage.clickcount) {
+                    sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
+                } else {
+                    sessionStorage.clickcount = 1;
+                }
+                document.getElementById("p").innerHTML = "You have clicked the button " + sessionStorage.clickcount + " time(s).";
+            } else {
+                document.getElementById("p").innerHTML = "Sorry, your browser does not support web storage.";
+            }
+        }
+    </script>
+</body>
+</html>

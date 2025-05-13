@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>WebWorkerProblem</title>
+</head>
+<body>
+<button onclick="welcome()">welcome</button>
+<button onclick="getValue()">generate value</button>
+<button onclick="hi()">hai</button>
+<script>
+function welcome()
+{
+alert("Welcome to webworker");
+}
+function getValue(){
+var j;
+for(var i=0;i<2000000000;i++)
+j=i;
+alert(j);
+}
+function hi()
+{
+alert("hai");
+}
+</script>
+</body>
+</html>

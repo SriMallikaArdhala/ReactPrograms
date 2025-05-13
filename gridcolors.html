@@ -1,0 +1,68 @@
+<head>
+    <title>Pattern</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(6, 50px);
+            grid-template-rows: repeat(5, 50px);
+            gap: 3px;
+           margin:200px 600px auto;
+        }
+
+        .grid-item {
+            width: 50px;
+            height: 50px;
+        }
+
+        /* Define the colors */
+        .orange { background-color: #ff6600; }
+        .light-orange { background-color: #ffa366; }
+        .dark-orange { background-color: #993d00; }
+    </style>
+</head>
+<body>
+
+<div class="grid-container">
+    <!-- Row 1 -->
+    <div class="grid-item orange"></div>
+    <div class="grid-item light-orange"></div>
+    <div class="grid-item dark-orange"></div>
+    <div class="grid-item orange"></div>
+    <div class="grid-item light-orange"></div>
+    <div class="grid-item dark-orange"></div>
+    
+    <!-- Row 2 -->
+    <div class="grid-item light-orange"></div>
+    <div class="grid-item dark-orange"></div>
+    <div class="grid-item orange"></div>
+    <div class="grid-item light-orange"></div>
+    <div class="grid-item dark-orange"></div>
+    <div class="grid-item orange"></div>
+    
+    <!-- Row 3 -->
+    <div class="grid-item dark-orange"></div>
+    <div class="grid-item orange"></div>
+    <div class="grid-item light-orange"></div>
+    <div class="grid-item dark-orange"></div>
+    <div class="grid-item orange"></div>
+    <div class="grid-item light-orange"></div>
+    
+    <!-- Row 4 -->
+    <div class="grid-item orange"></div>
+    <div class="grid-item light-orange"></div>
+    <div class="grid-item dark-orange"></div>
+     <div class="grid-item orange"></div>
+    <div class="grid-item light-orange"></div>
+    <div class="grid-item dark-orange"></div>
+    
+    <!-- Row 5 -->
+     <div class="grid-item light-orange"></div>
+    <div class="grid-item dark-orange"></div>
+    <div class="grid-item orange"></div>
+    <div class="grid-item light-orange"></div>
+    <div class="grid-item dark-orange"></div>
+    <div class="grid-item orange"></div>
+</div>
+
+</body>
+</html>
